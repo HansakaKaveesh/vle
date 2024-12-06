@@ -19,8 +19,8 @@ export default function Home() {
       <TutoringSection/>
       <OurModules />
       <OurCourses />
-      <Testimonials />
       <MeetTeachersStudents />
+      <Testimonials />
       <CTASection/>
       <Footer />
     </div>
