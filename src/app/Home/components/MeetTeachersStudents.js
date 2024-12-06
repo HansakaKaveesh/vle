@@ -1,9 +1,9 @@
 export default function MeetTeachersStudents() {
   const people = [
-    { name: 'Alice', role: 'Teacher', image: '/Men.jpg' },
-    { name: 'Bob', role: 'Student', image: '/Men.jpg' },
-    { name: 'Carol', role: 'Teacher', image: '/Women.jpg' },
-    { name: 'David', role: 'Student', image: '/Women.jpg' },
+    { name: 'Mr. Tanjana Chamikara', role: 'Teacher', image: '/tanjana-sir-image-1.png' },
+    { name: 'Ms. Madhara Wedhage', role: 'Teacher', image: '/madara-miss-image-600-2-1.png' },
+    { name: 'Ms. Udara Dilshani', role: 'Teacher', image: '/udara-miss-2.png' },
+    { name: 'David', role: 'Teacher', image: '/Women.jpg' },
   ];
 
   return (

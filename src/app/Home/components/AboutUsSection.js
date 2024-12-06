@@ -1,29 +1,31 @@
-// src/components/AboutUs.jsx
-
 export default function AboutUs() {
     return (
-      <section className="bg-gray-100 py-16">
+      <section className="bg-gray-100 py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          {/* Heading */}
           <div className="text-center">
-            <h2 className="text-3xl font-bold text-gray-800 sm:text-4xl">
+            <h2 className="text-4xl font-extrabold text-center text-gray-800 tracking-tight">
               About Us
             </h2>
-            <p className="mt-4 text-lg text-gray-600">
-              Welcome to our Virtual Learning Environment, where education meets innovation. 
-              We empower learners and educators to connect, collaborate, and grow in a digital-first world.
+            <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+              Welcome to our Virtual Learning Environment, where education meets
+              innovation. We empower learners and educators to connect,
+              collaborate, and grow in a digital-first world.
             </p>
           </div>
-          <div className="mt-12 grid gap-8 lg:grid-cols-3">
-            {/* Mission */}
-            <div className="p-6 bg-white rounded-lg shadow-md hover:shadow-lg">
-              <div className="flex items-center justify-center h-16 w-16 rounded-full bg-indigo-600 text-white">
+          
+          {/* Cards Section */}
+          <div className="mt-16 grid gap-8 lg:grid-cols-3">
+            {/* Mission Card */}
+            <div className="relative p-8 bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow">
+              <div className="flex items-center justify-center h-20 w-20 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 text-white shadow-lg">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
                   strokeWidth="2"
                   stroke="currentColor"
-                  className="w-8 h-8"
+                  className="w-10 h-10"
                 >
                   <path
                     strokeLinecap="round"
@@ -32,23 +34,25 @@ export default function AboutUs() {
                   />
                 </svg>
               </div>
-              <h3 className="mt-6 text-xl font-semibold text-gray-800">
+              <h3 className="mt-8 text-xl font-bold text-gray-800">
                 Our Mission
               </h3>
               <p className="mt-4 text-gray-600">
-                To provide accessible, high-quality digital tools and resources that revolutionize how education is delivered and experienced.
+                To provide accessible, high-quality digital tools and resources
+                that revolutionize how education is delivered and experienced.
               </p>
             </div>
-            {/* Vision */}
-            <div className="p-6 bg-white rounded-lg shadow-md hover:shadow-lg">
-              <div className="flex items-center justify-center h-16 w-16 rounded-full bg-indigo-600 text-white">
+  
+            {/* Vision Card */}
+            <div className="relative p-8 bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow">
+              <div className="flex items-center justify-center h-20 w-20 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 text-white shadow-lg">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
                   strokeWidth="2"
                   stroke="currentColor"
-                  className="w-8 h-8"
+                  className="w-10 h-10"
                 >
                   <path
                     strokeLinecap="round"
@@ -57,23 +61,25 @@ export default function AboutUs() {
                   />
                 </svg>
               </div>
-              <h3 className="mt-6 text-xl font-semibold text-gray-800">
+              <h3 className="mt-8 text-xl font-bold text-gray-800">
                 Our Vision
               </h3>
               <p className="mt-4 text-gray-600">
-                To become the leading platform for empowering education globally, bridging gaps between learners and educators.
+                To become the leading platform for empowering education globally,
+                bridging gaps between learners and educators.
               </p>
             </div>
-            {/* Values */}
-            <div className="p-6 bg-white rounded-lg shadow-md hover:shadow-lg">
-              <div className="flex items-center justify-center h-16 w-16 rounded-full bg-indigo-600 text-white">
+  
+            {/* Values Card */}
+            <div className="relative p-8 bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow">
+              <div className="flex items-center justify-center h-20 w-20 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 text-white shadow-lg">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
                   strokeWidth="2"
                   stroke="currentColor"
-                  className="w-8 h-8"
+                  className="w-10 h-10"
                 >
                   <path
                     strokeLinecap="round"
@@ -82,11 +88,12 @@ export default function AboutUs() {
                   />
                 </svg>
               </div>
-              <h3 className="mt-6 text-xl font-semibold text-gray-800">
+              <h3 className="mt-8 text-xl font-bold text-gray-800">
                 Our Values
               </h3>
               <p className="mt-4 text-gray-600">
-                Innovation, accessibility, and collaboration are at the heart of everything we do, ensuring a seamless learning experience.
+                Innovation, accessibility, and collaboration are at the heart of
+                everything we do, ensuring a seamless learning experience.
               </p>
             </div>
           </div>
