@@ -14,7 +14,7 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <nav className="sticky z-20 top-0 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white shadow-lg px-6 py-4">
+    <nav className="sticky z-20 top-0 bg-blue-600 text-white shadow-lg px-6 py-4">
       <div className="flex items-center justify-between">
         {/* Logo */}
         <div className="text-4xl font-extrabold tracking-wide hover:scale-105 transition-transform duration-300">
