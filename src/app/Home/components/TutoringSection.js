@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const TutoringSection = () => {
   return (
-    <section className="relative flex flex-wrap items-center justify-center bg-gradient-to-br from-gray-100 via-purple-50 to-gray-50 py-20 px-8">
+    <section className="relative flex flex-wrap items-center justify-center bg-gray-100 py-20 px-8">
       <div className="max-w-7xl w-full grid md:grid-cols-2 gap-16 items-center">
         {/* Text Section */}
         <div className="space-y-6">

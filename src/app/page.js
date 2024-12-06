@@ -1,5 +1,6 @@
 import Navbar from './Home/components/Navbar';
 import Hero from './Home/components/Hero';
+import AboutUsSection from './Home/components/AboutUsSection'
 import TutoringSection from './Home/components/TutoringSection'
 import OurModules from './Home/components/OurModules';
 import OurCourses from './Home/components/OurCourses';
@@ -14,6 +15,7 @@ export default function Home() {
     <div>
       <Navbar/>
       <Hero />
+      <AboutUsSection/>
       <TutoringSection/>
       <OurModules />
       <OurCourses />
