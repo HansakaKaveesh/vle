@@ -1,4 +1,5 @@
 import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa';
+import Image from 'next/image';
 
 export default function Testimonials() {
   const testimonials = [
@@ -37,11 +38,15 @@ export default function Testimonials() {
               <div className="relative">
                 <FaQuoteLeft className="absolute top-0 left-0 text-3xl text-blue-500" />
                 <FaQuoteRight className="absolute bottom-0 right-0 text-3xl text-blue-500" />
-                <img
-                  src={testimonial.image}
-                  alt={testimonial.name}
-                  className="w-16 h-16 rounded-full mx-auto mb-4 border-4 border-blue-500"
-                />
+                <div className="relative w-16 h-16 mx-auto mb-4">
+                  <Image
+                    src={testimonial.image}
+                    alt={testimonial.name}
+                    width={64} // Specify width
+                    height={64} // Specify height
+                    className="rounded-full border-4 border-blue-500 object-cover"
+                  />
+                </div>
               </div>
               <p className="text-center text-lg italic text-gray-700">{`"${testimonial.feedback}"`}</p>
               <h4 className="mt-4 text-center font-semibold text-xl text-gray-800">{testimonial.name}</h4>

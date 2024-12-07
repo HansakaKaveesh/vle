@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Link from "next/link";
 import {
   FaBook,
   FaLaptopCode,
@@ -17,30 +18,30 @@ export default function Navbar() {
     <nav className="sticky z-20 top-0 bg-blue-600 text-white shadow-lg px-6 py-4">
       <div className="flex items-center justify-between">
         {/* Logo */}
-        <a
+        <Link
           href="/"
           className="text-4xl font-extrabold tracking-wide hover:scale-105 transition-transform duration-300"
         >
           GenZedu
-        </a>
+        </Link>
 
         {/* Desktop Navigation Links */}
         <ul className="hidden md:flex items-center space-x-8 text-lg font-semibold">
           <li>
-            <a
+            <Link
               href="/"
               className="hover:text-yellow-300 cursor-pointer transition-transform duration-300 hover:scale-110"
             >
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
               href="/about"
               className="hover:text-yellow-300 cursor-pointer transition-transform duration-300 hover:scale-110"
             >
               About Us
-            </a>
+            </Link>
           </li>
           <li
             className="relative group"
@@ -53,49 +54,49 @@ export default function Navbar() {
             {modulesOpen && (
               <ul className="absolute top-8 left-0 bg-white text-blue-700 rounded-lg shadow-xl py-2 z-10 w-56 animate-slideIn">
                 <li>
-                  <a
+                  <Link
                     href="/modules/math"
                     className="flex items-center px-4 py-3 hover:bg-blue-100 cursor-pointer transition-all duration-200"
                   >
                     <FaBook className="mr-3 text-yellow-500" />
                     Mathematics
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="/modules/science"
                     className="flex items-center px-4 py-3 hover:bg-blue-100 cursor-pointer transition-all duration-200"
                   >
                     <FaFlask className="mr-3 text-green-500" />
                     Science
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="/modules/history"
                     className="flex items-center px-4 py-3 hover:bg-blue-100 cursor-pointer transition-all duration-200"
                   >
                     <FaHistory className="mr-3 text-red-500" />
                     History
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="/modules/programming"
                     className="flex items-center px-4 py-3 hover:bg-blue-100 cursor-pointer transition-all duration-200"
                   >
                     <FaLaptopCode className="mr-3 text-purple-500" />
                     Programming
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="/modules/art"
                     className="flex items-center px-4 py-3 hover:bg-blue-100 cursor-pointer transition-all duration-200"
                   >
                     <FaPalette className="mr-3 text-pink-500" />
                     Art
-                  </a>
+                  </Link>
                 </li>
               </ul>
             )}
@@ -111,59 +112,59 @@ export default function Navbar() {
             {coursesOpen && (
               <ul className="absolute top-8 left-0 bg-white text-blue-700 rounded-lg shadow-xl py-2 z-10 w-56 animate-slideIn">
                 <li>
-                  <a
+                  <Link
                     href="/courses/web-development"
                     className="flex items-center px-4 py-3 hover:bg-blue-100 cursor-pointer transition-all duration-200"
                   >
                     <FaLaptopCode className="mr-3 text-purple-500" />
                     Web Development
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="/courses/data-science"
                     className="flex items-center px-4 py-3 hover:bg-blue-100 cursor-pointer transition-all duration-200"
                   >
                     <FaLaptopCode className="mr-3 text-blue-500" />
                     Data Science
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="/courses/machine-learning"
                     className="flex items-center px-4 py-3 hover:bg-blue-100 cursor-pointer transition-all duration-200"
                   >
                     <FaLaptopCode className="mr-3 text-orange-500" />
                     Machine Learning
-                  </a>
+                  </Link>
                 </li>
               </ul>
             )}
           </li>
           <li>
-            <a
+            <Link
               href="/contact"
               className="hover:text-yellow-300 cursor-pointer transition-transform duration-300 hover:scale-110"
             >
               Contact Us
-            </a>
+            </Link>
           </li>
         </ul>
 
         {/* Auth Buttons */}
         <div className="hidden md:flex space-x-6">
-          <a
+          <Link
             href="/login"
             className="bg-yellow-500 text-black px-5 py-2 rounded-lg font-semibold shadow-lg hover:bg-yellow-400 hover:scale-105 transition-all duration-300"
           >
             Sign In
-          </a>
-          <a
+          </Link>
+          <Link
             href="/register"
             className="bg-yellow-500 text-black px-5 py-2 rounded-lg font-semibold shadow-lg hover:bg-yellow-400 hover:scale-105 transition-all duration-300"
           >
             Register
-          </a>
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -182,56 +183,44 @@ export default function Navbar() {
         <div className="md:hidden bg-indigo-600 text-white rounded-lg shadow-lg mt-4 p-4 space-y-4">
           <ul className="space-y-4 text-lg">
             <li>
-              <a href="/" className="hover:text-yellow-300 cursor-pointer">
+              <Link href="/" className="hover:text-yellow-300 cursor-pointer">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="/about"
-                className="hover:text-yellow-300 cursor-pointer"
-              >
+              <Link href="/about" className="hover:text-yellow-300 cursor-pointer">
                 About Us
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="/modules"
-                className="hover:text-yellow-300 cursor-pointer"
-              >
+              <Link href="/modules" className="hover:text-yellow-300 cursor-pointer">
                 Modules
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="/courses"
-                className="hover:text-yellow-300 cursor-pointer"
-              >
+              <Link href="/courses" className="hover:text-yellow-300 cursor-pointer">
                 Courses
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="/contact"
-                className="hover:text-yellow-300 cursor-pointer"
-              >
+              <Link href="/contact" className="hover:text-yellow-300 cursor-pointer">
                 Contact Us
-              </a>
+              </Link>
             </li>
           </ul>
           <div className="flex flex-col space-y-4">
-            <a
+            <Link
               href="/login"
               className="bg-yellow-500 text-black px-5 py-2 rounded-lg font-semibold shadow-lg hover:bg-yellow-400 transition-all duration-300"
             >
               Sign In
-            </a>
-            <a
+            </Link>
+            <Link
               href="/register"
               className="bg-yellow-500 text-black px-5 py-2 rounded-lg font-semibold shadow-lg hover:bg-yellow-400 transition-all duration-300"
             >
               Register
-            </a>
+            </Link>
           </div>
         </div>
       )}
