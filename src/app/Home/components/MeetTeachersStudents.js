@@ -10,7 +10,7 @@ export default function MeetTeachersStudents() {
     <section className="py-16 bg-gray-100">
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         <h2 className="text-4xl font-extrabold text-center text-gray-800 tracking-tight">
-          Meet Our Teachers and Students
+          Meet Our Teachers
         </h2>
         <p className="mt-4 text-lg text-center text-gray-600">
           Get to know the brilliant minds who make up our vibrant learning community.
