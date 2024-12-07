@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function MeetTeachersStudents() {
   const people = [
     { name: 'Mr. Tanjana Chamikara', role: 'Teacher', image: '/tanjana-sir-image-1.png' },
@@ -22,10 +24,12 @@ export default function MeetTeachersStudents() {
               className="p-6 bg-white text-center shadow-lg rounded-xl hover:shadow-2xl transition-shadow transform hover:-translate-y-2 duration-300 ease-in-out"
             >
               <div className="relative w-24 h-24 mx-auto mb-4">
-                <img
+                <Image
                   src={person.image}
                   alt={person.name}
-                  className="w-24 h-24 rounded-full object-cover shadow-md"
+                  width={96} // Set the width explicitly
+                  height={96} // Set the height explicitly
+                  className="rounded-full object-cover shadow-md"
                 />
               </div>
               <h3 className="text-2xl font-semibold text-gray-800">{person.name}</h3>
