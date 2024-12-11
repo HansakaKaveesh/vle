@@ -37,7 +37,7 @@ export default function Navbar() {
           </li>
           <li>
             <Link
-              href="/about"
+              href="/about-us"
               className="hover:text-yellow-300 cursor-pointer transition-transform duration-300 hover:scale-110"
             >
               About Us
@@ -55,7 +55,7 @@ export default function Navbar() {
               <ul className="absolute top-8 left-0 bg-white text-blue-700 rounded-lg shadow-xl py-2 z-10 w-56 animate-slideIn">
                 <li>
                   <Link
-                    href="/modules/math"
+                    href="/modules/maths"
                     className="flex items-center px-4 py-3 hover:bg-blue-100 cursor-pointer transition-all duration-200"
                   >
                     <FaBook className="mr-3 text-yellow-500" />
